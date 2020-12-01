@@ -1,0 +1,15 @@
+<% include('./partials/head') %>
+
+<h1>JSONPlaceholder Posts</h1>
+<ul>
+    <% posts.map(post => {  %>
+    <li><%= post.title %></li>
+    <% }); %>
+</ul>
+<!-- 
+<form action="/results" method="GET">
+    <input type="text" placeholder="Search post" name="searchKey">
+    <input type="submit">
+</form> -->
+
+<% include('./partials/footer') %>
